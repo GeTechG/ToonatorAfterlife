@@ -1,0 +1,10 @@
+{
+    "name": {
+        "message": "Toonator Afterlife",
+        "description": "Toonator Afterlife"
+    },
+    "desc": {
+        "message": "Brand new editor for Toonator",
+        "description": "The extension adds a modified editor for Toonator, which is able to work without using the outdated (and even prohibited) Flash technology.\nBy tim."
+    }
+}
