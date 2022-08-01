@@ -5882,14 +5882,14 @@ com_toonator_player_Player.prototype = $extend(openfl_display_MovieClip.prototyp
 		this.toon_id = param1;
 		if(param3.sequence) {
 			this.sequence = [];
-			_loc4_ = new openfl_net_URLRequest("http://multator.ru/toon/" + param1 + "/sequence/wn");
+			_loc4_ = new openfl_net_URLRequest("http://ru.toonator.com/toon/" + param1 + "/sequence/wn");
 			this.loader = new openfl_net_URLLoader();
 		} else if(param3.swf) {
-			_loc4_ = new openfl_net_URLRequest("http://flash.multator.ru/swf/" + param1);
+			_loc4_ = new openfl_net_URLRequest("http://flash.ru.toonator.com/swf/" + param1);
 			this.swfLoader = new openfl_display_Loader();
 			this.playerSprite.addChild(this.swfLoader);
 		} else {
-			_loc4_ = new openfl_net_URLRequest(toonator_Main.SCHEME + "multator.ru/dra/" + param1);
+			_loc4_ = new openfl_net_URLRequest(toonator_Main.SCHEME + "ru.toonator.com/dra/" + param1);
 			this.loader = new openfl_net_URLLoader();
 			this.loader.dataFormat = 0;
 		}
@@ -5908,7 +5908,7 @@ com_toonator_player_Player.prototype = $extend(openfl_display_MovieClip.prototyp
 			this.swfLoader.load(_loc4_);
 		}
 		if(param2 != null) {
-			_loc5_ = new openfl_net_URLRequest(toonator_Main.SCHEME + "multator.ru/mp3/" + param2);
+			_loc5_ = new openfl_net_URLRequest(toonator_Main.SCHEME + "ru.toonator.com/mp3/" + param2);
 			this.sound = new openfl_media_Sound();
 			this.sound.addEventListener("progress",$bind(this,this.onSoundLoadProgress));
 			this.sound.addEventListener("ioError",$bind(this,this.onSoundLoadError));
@@ -6134,7 +6134,7 @@ com_toonator_player_Player.prototype = $extend(openfl_display_MovieClip.prototyp
 				this.checkComplete();
 			} else {
 				_loc8_ = this.sequence[this.sequenceLoading].toon_id;
-				_loc9_ = new openfl_net_URLRequest("http://multator.ru/dra/" + _loc8_);
+				_loc9_ = new openfl_net_URLRequest("http://ru.toonator.com/dra/" + _loc8_);
 				this.loader = new openfl_net_URLLoader();
 				this.loader.dataFormat = 0;
 				this.loader.addEventListener("complete",$bind(this,this.onLoadComplete));
@@ -6306,7 +6306,7 @@ com_toonator_player_Player.prototype = $extend(openfl_display_MovieClip.prototyp
 			_loc4_ = this.sequence[this.sequencePlaying].toon;
 			_loc5_ = Std.parseInt(Std.string(param1 - this.sequence[this.sequencePlaying].from));
 			this.usernamePanel.set_text(this.sequence[this.sequencePlaying].author);
-			this.usernamePanel.set_link("http://multator.ru/toon/" + Std.string(this.sequence[this.sequencePlaying].toon_id));
+			this.usernamePanel.set_link("http://ru.toonator.com/toon/" + Std.string(this.sequence[this.sequencePlaying].toon_id));
 			this.currentFrameSprite = _loc4_.getFrame(_loc5_).getSprite();
 		} else {
 			this.currentFrameSprite = this.toon.getFrame(param1).getSprite();

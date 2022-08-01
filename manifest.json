@@ -8,7 +8,7 @@
     "version": "1.0.4",
     "permissions":
     [
-        "https://multator.ru/*",
+        "https://ru.toonator.com/*",
         "https://toonator.com/*"
     ],
     "icons":
@@ -22,7 +22,7 @@
         {
             "matches":
             [
-                "https://multator.ru/*",
+				"https://ru.toonator.com/*",
                 "https://toonator.com/*"
             ],
             "js": 

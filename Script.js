@@ -12,7 +12,7 @@ if(location.href.indexOf('draw') != -1)
 
     //$('head').append('<style>body {user-select: none}</style>');
 
-    if(location.href.indexOf('multator.ru') != -1)
+    if(location.href.indexOf('ru.toonator.com') != -1)
     {
         $('.rightpanel').append(`
         <br/>
